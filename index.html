@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css" >
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ankita</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-menu">
+        <div class="logo">Ankita</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Ankita profile pic">
+        </div>
+        <div>
+            <section class="section__text">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">Ankita</h1>
+                <p class="section__text__p2">Front End Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                        Download Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div>
+                    <div id="socials-container">
+                        <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ankita-kanakagiri-8935b1264/'">
+                        <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/Ankita-K-K'">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text_p1 sub-title">GET TO KNOW MORE</p>
+        <h1 class="title">ABOUT ME</h1>
+        <div class="section-container">
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        Hi, I'm Ankita, a dedicated Web Developer specializing in creating seamless, dynamic web applications. With expertise in frontend development using React.js and Redux Toolkit also with the css framework tailwind, and backend development powered by MongoDB and Node.js, I bring full-stack solutions to life.<br>I thrive on transforming ideas into responsive, user-friendly designs while ensuring robust backend functionality. Whether it's building interactive user interfaces or architecting efficient database solutions, I aim to deliver impactful digital experiences.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects">
+            <p class="section__text__p1">BROWSE MY RECENTS</p>
+            <h1 class="title">PROJECTS</h1>
+            <div class="project-collection">
+            <div class="project-container">
+                <img src="./assets/project1.png" alt="project1: Movie recomendation system">
+                <p class="section__text__p1">Netflix with Movie Recomdation System</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ankita-K-K/nextflix-gpt'">Github</button>
+                </div>
+            </div>
+            <div class="project-container">
+                <img src="./assets/project2.png" alt="project2: Youtube">
+                <p class="section__text__p1">YouTube like app</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ankita-K-K/YouTube'">Github</button>
+                </div>
+            </div>
+            <div class="project-container">
+                <img src="./assets/project3.png" alt="project3: Food Reciepe">
+                <p class="section__text__p1">Food recepie app</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ankita-K-K/Food-Recipe'">Github</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
